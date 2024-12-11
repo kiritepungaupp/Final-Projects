@@ -8,7 +8,7 @@ import urlclassifier
 import requests
 from initdb import URLdb
 import logging
-
+#data used https://www.kaggle.com/datasets/pilarpieiro/tabular-dataset-ready-for-malicious-url-detection
 app = Flask(__name__)
 
 scaler = joblib.load('scaler.pkl')

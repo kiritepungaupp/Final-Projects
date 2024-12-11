@@ -1,0 +1,5 @@
+Github link: https://github.com/kiritepungaupp/Final-Projects
+
+Dataset: https://www.kaggle.com/datasets/pilarpieiro/tabular-dataset-ready-for-malicious-url-detection
+
+API for screenshot: https://rapidapi.com/nexus-apis-nexus-apis-default/api/screenshotty1/playground/apiendpoint_c5d1b329-9560-4028-b8a1-4d84205bb032
