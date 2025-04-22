@@ -13,6 +13,22 @@ def get_tld(url):
 
 
 def build_url(url:str):
+
+    SUSPICIOUS_KEYWORDS = list(set([
+    'login', 'signin', 'logout', 'auth', 'authenticate', 'passwd', 'password',
+    'credentials', 'verify', 'validation', 'session', 'account', 'bank', 'securebank',
+    'ebanking', 'invoice', 'payment', 'billing', 'transfer', 'transaction', 'creditcard',
+    'debit', 'paypal', 'money', 'wallet', 'deposit', 'atm', 'webmail', 'email', 'mailbox',
+    'outlook', 'office365', 'exchange', 'inbox', 'smtp', 'imap', 'secure', 'security',
+    'suspend', 'disabled', 'risk', 'alert', 'breach', 'urgent', 'warning', 'locked',
+    'verify-now', 'immediately', 'attention', 'support', 'helpdesk', 'update',
+    'maintenance', 'itdesk', 'service', 'admin', 'administrator', 'sysadmin', 'staff',
+    'win', 'free', 'bonus', 'gift', 'reward', 'claim', 'prize', 'offer', 'promo',
+    'deal', 'trial', 'giveaway', 'discount', 'voucher', 'apple', 'google', 'facebook',
+    'amazon', 'netflix', 'paypal', 'microsoft', 'outlook', 'dropbox', 'dhl', 'fedex',
+    'irs', 'gov', 'ups'
+    ]))
+
     if not url.startswith(('http://', 'https://')):
         hturl = 'http://' + url
     else:
